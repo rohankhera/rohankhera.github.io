@@ -4,30 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rohan Khera, MD, MS — Cardiologist &amp; Data Scientist</title>
-  <meta name="description" content="Rohan Khera, MD, MS, FACC, FAHA — Cardiologist and Data Scientist at Yale University. Director of the CarDS Lab. Expert in cardiovascular medicine, machine learning, and AI in healthcare." />
+  <meta name="description" content="Rohan Khera, MD, MS — Cardiologist and data scientist at Yale University and Director of the Cardiovascular Data Science (CarDS) Lab. AI in cardiovascular medicine, clinical validation, and advisory work." />
+  <meta name="author" content="Rohan Khera" />
+  <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#131518" media="(prefers-color-scheme: dark)" />
+  <link rel="canonical" href="https://rohankhera.com/" />
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://rohankhera.com/" />
   <meta property="og:title" content="Rohan Khera, MD, MS" />
-  <meta property="og:description" content="Cardiologist and Data Scientist at Yale University. Director of the CarDS Lab." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rohankhera.com" />
-  <link rel="canonical" href="https://rohankhera.com" />
+  <meta property="og:description" content="Cardiologist and data scientist at Yale University. Director of the CarDS Lab." />
+  <meta property="og:image" content="https://rohankhera.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Rohan Khera, MD, MS — Cardiologist and Data Scientist, Yale University" />
+  <meta property="profile:first_name" content="Rohan" />
+  <meta property="profile:last_name" content="Khera" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@rohan_khera" />
+  <meta name="twitter:image" content="https://rohankhera.com/og-image.jpg" />
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rohan Khera",
+    "honorificSuffix": "MD, MS",
+    "jobTitle": "Associate Professor of Medicine (Cardiology) and Biostatistics",
+    "worksFor": { "@type": "Organization", "name": "Yale School of Medicine", "url": "https://medicine.yale.edu/" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "All India Institute of Medical Sciences" },
+      { "@type": "CollegeOrUniversity", "name": "University of Iowa" },
+      { "@type": "CollegeOrUniversity", "name": "UT Southwestern Medical Center" }
+    ],
+    "knowsAbout": ["Cardiology", "Artificial intelligence in medicine", "Machine learning", "Electrocardiography", "Echocardiography", "Clinical informatics"],
+    "url": "https://rohankhera.com/",
+    "image": "https://rohankhera.com/headshot.jpg",
+    "sameAs": [
+      "https://www.cards-lab.org/",
+      "https://medicine.yale.edu/profile/rohan-khera/",
+      "https://scholar.google.com/citations?user=9XhOK4AAAAAJ",
+      "https://x.com/rohan_khera",
+      "https://www.linkedin.com/in/r-khera/"
+    ]
+  }
+  </script>
+
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231a3a5c'/><text x='16' y='22' font-family='Georgia,serif' font-size='14' font-weight='600' fill='white' text-anchor='middle' letter-spacing='0.5'>RK</text></svg>" />
+  <link rel="apple-touch-icon" href="headshot.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet" />
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
       --ink: #1a1a1a;
+      --ink-body: #2b2b2b;
       --ink-light: #555;
-      --ink-faint: #888;
-      --rule: #d8d8d0;
+      --ink-faint: #7d7d78;
+      --rule: #dcdbd3;
       --bg: #faf9f7;
+      --surface: #f2f0eb;
       --accent: #1a3a5c;
-      --accent-light: #2a5298;
-      --serif: 'EB Garamond', Georgia, serif;
-      --sans: 'Jost', sans-serif;
+      --accent-link: #23497a;
+      --tag-border: #b5c8df;
+      --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+      --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+      --label-col: 168px;
     }
-    html { scroll-behavior: smooth; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #ecebe6;
+        --ink-body: #d6d4ce;
+        --ink-light: #a9a7a0;
+        --ink-faint: #85837d;
+        --rule: #2c2f34;
+        --bg: #131518;
+        --surface: #1b1e22;
+        --accent: #9db8da;
+        --accent-link: #a9c4e6;
+        --tag-border: #3a4a5e;
+      }
+    }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
     body {
       background: var(--bg);
       color: var(--ink);
@@ -35,307 +101,406 @@
       font-size: 18px;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "kern", "liga", "onum";
     }
+
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+    ::selection { background: var(--accent); color: var(--bg); }
+
     .container {
-      max-width: 760px;
+      max-width: 940px;
       margin: 0 auto;
       padding: 0 2rem;
     }
-    section {
-      padding: 4rem 0;
-      border-top: 1px solid var(--rule);
-    }
 
-    /* HEADER */
-    header {
-      padding: 5rem 0 3.5rem;
-    }
+    /* ── HEADER ── */
+    header { padding: 5.5rem 0 0; }
+
     .header-content {
       display: flex;
-      align-items: flex-start;
-      gap: 2.5rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
     }
-    .header-text {
-      flex: 1;
+
+    .site-name {
+      font-size: clamp(2.2rem, 4.6vw, 3.2rem);
+      font-weight: 500;
+      letter-spacing: -0.012em;
+      line-height: 1.05;
     }
+
+    .site-name .degrees {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ink-light);
+      font-size: 0.72em;
+      letter-spacing: 0;
+    }
+
+    .site-credentials {
+      font-family: var(--sans);
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.9rem;
+    }
+
+    .site-tagline {
+      margin-top: 1.4rem;
+      font-size: 1.2rem;
+      line-height: 1.55;
+      color: var(--ink-light);
+      font-style: italic;
+      max-width: 34ch;
+    }
+
     .header-photo {
       flex-shrink: 0;
-      width: 160px;
-      height: 160px;
+      width: 176px;
+      height: 176px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid var(--rule);
-      background: #e8e6e1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: var(--surface);
+      box-shadow: 0 0 0 1px var(--rule), 0 0 0 7px var(--bg), 0 0 0 8px var(--rule);
     }
+
     .header-photo img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
-    /* Placeholder when no photo yet */
-    .header-photo .photo-placeholder {
-      font-family: var(--sans);
-      font-size: 0.65rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-      text-align: center;
-      padding: 0.5rem;
-      line-height: 1.4;
-    }
-    @media (max-width: 600px) {
-      .header-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-      }
-      .header-photo {
-        width: 130px;
-        height: 130px;
-      }
-      nav { justify-content: center; }
-    }
-    .site-name {
-      font-family: var(--serif);
-      font-size: clamp(1.9rem, 3.8vw, 2.6rem);
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      line-height: 1.1;
-      color: var(--ink);
-    }
-    .site-name em {
-      font-style: italic;
-      color: var(--ink-light);
-      font-weight: 400;
-    }
-    .site-credentials {
-      font-family: var(--sans);
-      font-size: 0.78rem;
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-      margin-top: 0.6rem;
-    }
-    .site-tagline {
-      margin-top: 1.5rem;
-      font-size: 1.1rem;
-      color: var(--ink-light);
-      font-style: italic;
-      max-width: 520px;
-      line-height: 1.65;
-    }
+
     nav {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
+      margin-top: 3rem;
+      padding: 1.1rem 0;
       border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
       display: flex;
-      gap: 2rem;
+      gap: 0.4rem 2.1rem;
       flex-wrap: wrap;
     }
+
     nav a {
       font-family: var(--sans);
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--ink-light);
       text-decoration: none;
       transition: color 0.2s;
     }
+
     nav a:hover { color: var(--accent); }
 
-    /* SECTION LABELS */
+    /* ── SECTIONS: label column + content column ── */
+    section {
+      display: grid;
+      grid-template-columns: var(--label-col) 1fr;
+      gap: 2.5rem;
+      padding: 3.6rem 0;
+      border-bottom: 1px solid var(--rule);
+      scroll-margin-top: 1.5rem;
+    }
+
     .section-label {
       font-family: var(--sans);
       font-size: 0.7rem;
+      font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--ink-faint);
-      margin-bottom: 1.8rem;
+      padding-top: 0.45rem;
+      line-height: 1.5;
     }
 
-    /* ABOUT */
-    .about-text p {
-      margin-bottom: 1.2em;
-      font-size: 1.05rem;
-      color: #2a2a2a;
-    }
-    .about-text p:last-child { margin-bottom: 0; }
+    .section-body { min-width: 0; max-width: 660px; }
 
-    /* RECOGNITION */
-    .recognition-text {
+    .prose p {
+      margin-bottom: 1.15em;
+      font-size: 1.06rem;
+      color: var(--ink-body);
+    }
+    .prose p:last-child { margin-bottom: 0; }
+
+    .text-link {
+      color: var(--accent-link);
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-size: 0% 1px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.25s ease;
+    }
+    .text-link:hover { background-size: 100% 1px; }
+
+    /* ── RECOGNITION ── */
+    .award-list { list-style: none; }
+
+    .award-list li {
+      display: grid;
+      grid-template-columns: 3.4rem 1fr;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .award-list li:first-child { padding-top: 0; }
+
+    .award-year {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+      letter-spacing: 0.04em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .award-name { font-size: 1.02rem; color: var(--ink); }
+    .award-org { color: var(--ink-faint); font-style: italic; }
+
+    .recognition-note {
+      margin-top: 1.5rem;
       font-size: 0.98rem;
-      color: #2a2a2a;
-      line-height: 1.7;
-      max-width: 660px;
+      color: var(--ink-light);
+      line-height: 1.65;
     }
 
-    /* RESEARCH */
+    /* ── RESEARCH ── */
     .research-areas {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.6rem 2.5rem;
+      gap: 1.9rem 2.6rem;
     }
-    @media (max-width: 560px) {
-      .research-areas { grid-template-columns: 1fr; }
-    }
+
     .research-item h3 {
-      font-family: var(--serif);
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 500;
       color: var(--ink);
       margin-bottom: 0.3rem;
+      line-height: 1.3;
     }
+
     .research-item p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--ink-light);
       line-height: 1.55;
     }
 
-    /* AFFILIATIONS */
-    .affiliation-list { list-style: none; }
-    .affiliation-list li {
-      padding: 0.9rem 0;
-      border-bottom: 1px solid var(--rule);
+    /* ── ROLES ── */
+    .row-list { list-style: none; }
+
+    .row-list li {
       display: flex;
       align-items: baseline;
-      gap: 1rem;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--rule);
     }
-    .affiliation-list li:last-child { border-bottom: none; }
-    .aff-role {
-      font-size: 1rem;
-      color: var(--ink);
-      flex: 1;
-    }
-    .aff-org {
+    .row-list li:first-child { padding-top: 0; }
+    .row-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .row-main { font-size: 1.03rem; color: var(--ink); }
+
+    .row-aside {
       font-family: var(--sans);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       color: var(--ink-faint);
       letter-spacing: 0.04em;
-      white-space: nowrap;
+      text-align: right;
+      flex-shrink: 0;
     }
 
-    /* SELECTED WORK */
+    /* ── SELECTED WORK ── */
     .work-note {
-      font-size: 0.92rem;
+      font-size: 0.97rem;
       color: var(--ink-light);
       font-style: italic;
-      margin-bottom: 1.8rem;
-    }
-    .pub-link {
-      color: var(--accent-light);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
-    }
-    .pub-link:hover { border-color: var(--accent-light); }
-    .pub-list { list-style: none; }
-    .pub-list li {
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--rule);
-      font-size: 0.97rem;
-      line-height: 1.6;
-    }
-    .pub-list li:last-child { border-bottom: none; }
-    .pub-title {
-      color: var(--ink);
-      display: block;
-      margin-bottom: 0.2rem;
-    }
-    .pub-meta {
-      font-family: var(--sans);
-      font-size: 0.78rem;
-      color: var(--ink-faint);
-      letter-spacing: 0.03em;
+      margin-bottom: 1.4rem;
     }
 
-    /* CONSULTING */
-    .consult-text {
-      font-size: 1.02rem;
-      color: #2a2a2a;
-      max-width: 620px;
+    .pub-list { list-style: none; counter-reset: pub; }
+
+    .pub-list li {
+      counter-increment: pub;
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--rule);
     }
+    .pub-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .pub-list li::before {
+      content: counter(pub, decimal-leading-zero);
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      padding-top: 0.35rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .pub-title {
+      display: block;
+      font-size: 1.04rem;
+      line-height: 1.45;
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .pub-title:hover { color: var(--accent-link); }
+    .pub-title .arrow {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.8em;
+      color: var(--ink-faint);
+      margin-left: 0.3em;
+      transition: transform 0.2s, color 0.2s;
+    }
+    .pub-title:hover .arrow { transform: translate(2px, -2px); color: var(--accent-link); }
+
+    .pub-meta {
+      display: block;
+      margin-top: 0.25rem;
+      font-family: var(--sans);
+      font-size: 0.76rem;
+      color: var(--ink-faint);
+      letter-spacing: 0.04em;
+    }
+    .pub-meta em { font-style: normal; color: var(--ink-light); }
+
+    /* ── CONSULTING ── */
     .consult-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 1.5rem;
+      gap: 0.55rem;
+      margin-top: 1.6rem;
     }
+
     .tag {
       font-family: var(--sans);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
       color: var(--accent);
-      border: 1px solid #b5c8df;
-      padding: 0.28rem 0.75rem;
+      border: 1px solid var(--tag-border);
+      padding: 0.3rem 0.75rem;
       border-radius: 2px;
     }
 
-    /* CONTACT */
+    .consult-cta {
+      margin-top: 1.8rem;
+      font-size: 1rem;
+      color: var(--ink-light);
+    }
+
+    /* ── CONTACT ── */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0 3rem;
+      gap: 0 2.6rem;
     }
-    @media (max-width: 480px) {
-      .contact-grid { grid-template-columns: 1fr; }
-    }
+
     .contact-row {
       display: flex;
       flex-direction: column;
-      padding: 0.7rem 0;
+      padding: 0.75rem 0;
       border-bottom: 1px solid var(--rule);
     }
+
     .contact-label {
       font-family: var(--sans);
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--ink-faint);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.15rem;
     }
+
     .contact-value a {
       color: var(--ink);
       text-decoration: none;
-      font-size: 0.96rem;
+      font-size: 1rem;
       border-bottom: 1px solid var(--rule);
       transition: border-color 0.2s, color 0.2s;
+      overflow-wrap: anywhere;
     }
-    .contact-value a:hover {
-      color: var(--accent-light);
-      border-color: var(--accent-light);
-    }
+    .contact-value a:hover { color: var(--accent-link); border-color: var(--accent-link); }
 
-    /* FOOTER */
-    footer {
-      padding: 2.5rem 0;
-      border-top: 1px solid var(--rule);
-    }
+    /* ── FOOTER ── */
+    footer { padding: 2.4rem 0 3rem; }
+
     footer p {
       font-family: var(--sans);
-      font-size: 0.73rem;
+      font-size: 0.72rem;
       color: var(--ink-faint);
       letter-spacing: 0.05em;
     }
 
-    /* ANIMATIONS */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(14px); }
-      to   { opacity: 1; transform: translateY(0); }
+    /* ── RESPONSIVE ── */
+    @media (max-width: 760px) {
+      section {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+        padding: 3rem 0;
+      }
+      .section-label { padding-top: 0; }
+      .research-areas { grid-template-columns: 1fr; gap: 1.5rem; }
     }
-    header { animation: fadeUp 0.55s ease both; }
-    section:nth-child(1) { animation: fadeUp 0.55s 0.05s ease both; }
-    section:nth-child(2) { animation: fadeUp 0.55s 0.10s ease both; }
-    section:nth-child(3) { animation: fadeUp 0.55s 0.15s ease both; }
-    section:nth-child(4) { animation: fadeUp 0.55s 0.20s ease both; }
-    section:nth-child(5) { animation: fadeUp 0.55s 0.25s ease both; }
-    section:nth-child(6) { animation: fadeUp 0.55s 0.30s ease both; }
-    section:nth-child(7) { animation: fadeUp 0.55s 0.35s ease both; }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 1.25rem; }
+      header { padding-top: 3.5rem; }
+      .header-content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1.8rem;
+      }
+      .header-photo { width: 128px; height: 128px; }
+      .site-credentials { font-size: 0.68rem; letter-spacing: 0.12em; }
+      .site-tagline { font-size: 1.1rem; }
+      nav { gap: 0.6rem 1.4rem; margin-top: 2.4rem; }
+      .row-list li { flex-direction: column; gap: 0.1rem; }
+      .row-aside { text-align: left; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── MOTION ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      header { animation: fadeUp 0.6s ease both; }
+      main > section { animation: fadeUp 0.6s ease both; }
+      main > section:nth-child(1) { animation-delay: 0.08s; }
+      main > section:nth-child(2) { animation-delay: 0.14s; }
+      main > section:nth-child(3) { animation-delay: 0.20s; }
+      main > section:nth-child(n+4) { animation-delay: 0.26s; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      :root { --bg: #fff; --ink: #000; --ink-body: #111; --ink-light: #333; --ink-faint: #555; --rule: #ccc; --accent: #000; --accent-link: #000; }
+      body { font-size: 11pt; }
+      nav, .header-photo { display: none; }
+      header { padding-top: 0; }
+      section { padding: 1.2rem 0; break-inside: avoid; }
+      .pub-title .arrow { display: none; }
+      a[href^="http"].pub-title::after { content: " — " attr(href); font-family: var(--sans); font-size: 8pt; color: #555; }
+    }
   </style>
 </head>
 <body>
@@ -344,174 +509,178 @@
     <header id="top">
       <div class="header-content">
         <div class="header-text">
-          <h1 class="site-name">Rohan Khera, <em>MD, MS</em></h1>
+          <h1 class="site-name">Rohan Khera<span class="degrees">, MD, MS</span></h1>
           <p class="site-credentials">Cardiologist &nbsp;&middot;&nbsp; Data Scientist &nbsp;&middot;&nbsp; Yale University</p>
           <p class="site-tagline">Improving cardiovascular outcomes through machine learning, clinical informatics, and AI-driven precision medicine.</p>
         </div>
         <div class="header-photo">
-          <img src="a4781f9c-d70a-4e5d-8cfd-aba06a47d3ff.jpeg" alt="Rohan Khera" />
+          <img src="headshot.jpg" alt="Portrait of Rohan Khera" width="640" height="640" />
         </div>
       </div>
-      <nav>
+      <nav aria-label="Sections">
         <a href="#about">About</a>
+        <a href="#recognition">Recognition</a>
         <a href="#research">Research</a>
-        <a href="#affiliations">Roles</a>
+        <a href="#roles">Roles</a>
         <a href="#work">Selected Work</a>
         <a href="#consulting">Consulting</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section id="about">
-      <p class="section-label">About</p>
-      <div class="about-text">
-        <p>I am a cardiologist and data scientist at Yale University, where I direct the <a href="https://www.cards-lab.org/" class="pub-link">Cardiovascular Data Science (CarDS) Lab</a>. My work sits at the intersection of clinical medicine and computational methods&mdash;using electronic health records, electrocardiography, cardiovascular imaging, and wearable devices to build tools that improve how care is delivered to patients with or at risk for heart disease.</p>
-        <p>My research develops and validates machine learning and AI approaches that translate large-scale digital health data into actionable clinical insights. A central aim is precision cardiovascular care: identifying the right patients, the right interventions, and the right timing&mdash;at scale, and in populations historically underserved by conventional risk tools.</p>
-        <p>I trained in medicine at the All India Institute of Medical Sciences, completed internal medicine residency at the University of Iowa, and cardiology fellowship and postdoctoral research training at UT Southwestern Medical Center, where I also earned a Master of Clinical Sciences. I serve as Associate Editor for Artificial Intelligence and Digital Health at <em>JAMA</em>.</p>
-      </div>
-    </section>
+    <main>
 
-    <section id="recognition">
-      <p class="section-label">Recognition</p>
-      <p class="recognition-text">
-        My work has been recognized with the Douglas P. Zipes Distinguished Young Scientist Award (ACC, 2026), the Young Physician-Scientist Award (ASCI, 2023), the Blavatnik Award for Innovation (2023), the Doris Duke Clinician Scientist Development Award (2022), and the Jeremiah Stamler Distinguished Young Investigator Award (AHA, 2021). I am a Fellow of the American College of Cardiology (FACC) and the American Heart Association (FAHA), and board-certified in Cardiovascular Disease and Clinical Informatics. I have served as Special Advisor for AI to the American College of Cardiology and on international scientific advisory boards including the British Heart Foundation Centre of Excellence at King's College London and the Friede Springer Cardiovascular Prevention Center at Charit&eacute; Berlin.
-      </p>
-    </section>
+      <section id="about">
+        <h2 class="section-label">About</h2>
+        <div class="section-body prose">
+          <p>I am a cardiologist and data scientist at Yale University, where I direct the <a href="https://www.cards-lab.org/" class="text-link" target="_blank" rel="noopener">Cardiovascular Data Science (CarDS) Lab</a>. My work sits at the intersection of clinical medicine and computational methods&mdash;using electronic health records, electrocardiography, cardiovascular imaging, and wearable devices to build tools that improve how care is delivered to patients with or at risk for heart disease.</p>
+          <p>My research develops and validates machine learning and AI approaches that translate large-scale digital health data into actionable clinical insights. A central aim is precision cardiovascular care: identifying the right patients, the right interventions, and the right timing&mdash;at scale, and in populations historically underserved by conventional risk tools.</p>
+          <p>I trained in medicine at the All India Institute of Medical Sciences, completed internal medicine residency at the University of Iowa, and cardiology fellowship and postdoctoral research training at UT Southwestern Medical Center, where I also earned a Master of Clinical Sciences. I serve as Associate Editor for Artificial Intelligence and Digital Health at <em>JAMA</em>.</p>
+        </div>
+      </section>
 
-    <section id="research">
-      <p class="section-label">Research Focus</p>
-      <div class="research-areas">
-        <div class="research-item">
-          <h3>AI in Cardiovascular Imaging</h3>
-          <p>Deep learning applied to echocardiography and cardiac imaging for automated diagnosis, prognostication, and disease screening at scale.</p>
+      <section id="recognition">
+        <h2 class="section-label">Recognition</h2>
+        <div class="section-body">
+          <ul class="award-list">
+            <li><span class="award-year">2026</span><span class="award-name">Douglas P. Zipes Distinguished Young Scientist Award <span class="award-org">&middot; American College of Cardiology</span></span></li>
+            <li><span class="award-year">2023</span><span class="award-name">Young Physician-Scientist Award <span class="award-org">&middot; American Society for Clinical Investigation</span></span></li>
+            <li><span class="award-year">2023</span><span class="award-name">Blavatnik Award for Innovation</span></li>
+            <li><span class="award-year">2022</span><span class="award-name">Doris Duke Clinician Scientist Development Award</span></li>
+            <li><span class="award-year">2021</span><span class="award-name">Jeremiah Stamler Distinguished Young Investigator Award <span class="award-org">&middot; American Heart Association</span></span></li>
+          </ul>
+          <p class="recognition-note">Fellow of the American College of Cardiology (FACC) and the American Heart Association (FAHA); board-certified in Cardiovascular Disease and Clinical Informatics. I have served as Special Advisor for AI to the American College of Cardiology and on international scientific advisory boards, including the British Heart Foundation Centre of Excellence at King&rsquo;s College London and the Friede Springer Cardiovascular Prevention Center at Charit&eacute; Berlin.</p>
         </div>
-        <div class="research-item">
-          <h3>ECG-Based Phenotyping</h3>
-          <p>Neural network models that extract latent phenotypes from the 12-lead and single-lead ECG to detect structural heart disease, cardiomyopathy, and arrhythmia risk.</p>
-        </div>
-        <div class="research-item">
-          <h3>Clinical NLP &amp; EHR Science</h3>
-          <p>Large language models and structured EHR data to characterize disease burden, treatment patterns, and quality of care at population scale.</p>
-        </div>
-        <div class="research-item">
-          <h3>Wearable &amp; Remote Monitoring</h3>
-          <p>Machine learning on continuous wearable data for passive detection of cardiac events and monitoring of patients with heart failure.</p>
-        </div>
-        <div class="research-item">
-          <h3>Health Equity &amp; Global Health</h3>
-          <p>Designing and auditing AI models for fairness across populations; extending validated tools to low- and middle-income country contexts.</p>
-        </div>
-        <div class="research-item">
-          <h3>Precision Therapeutics</h3>
-          <p>Real-world evidence and computational phenomapping for personalized inference from clinical trials to diverse patient populations.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="affiliations">
-      <p class="section-label">Roles &amp; Affiliations</p>
-      <ul class="affiliation-list">
-        <li>
-          <span class="aff-role">Associate Professor of Medicine (Cardiology) &amp; Biostatistics</span>
-          <span class="aff-org">Yale School of Medicine</span>
-        </li>
-        <li>
-          <span class="aff-role">Director, Cardiovascular Data Science (CarDS) Lab</span>
-          <span class="aff-org">Yale University</span>
-        </li>
-        <li>
-          <span class="aff-role">Clinical Director, Center for Health Informatics &amp; Analytics</span>
-          <span class="aff-org">Yale-New Haven Hospital CORE</span>
-        </li>
-        <li>
-          <span class="aff-role">Associate Editor, AI &amp; Digital Health</span>
-          <span class="aff-org">JAMA</span>
-        </li>
-        <li>
-          <span class="aff-role">Attending Cardiologist</span>
-          <span class="aff-org">Yale New Haven Health</span>
-        </li>
-      </ul>
-    </section>
+      <section id="research">
+        <h2 class="section-label">Research Focus</h2>
+        <div class="section-body research-areas">
+          <div class="research-item">
+            <h3>AI in Cardiovascular Imaging</h3>
+            <p>Deep learning applied to echocardiography and cardiac imaging for automated diagnosis, prognostication, and disease screening at scale.</p>
+          </div>
+          <div class="research-item">
+            <h3>ECG-Based Phenotyping</h3>
+            <p>Neural network models that extract latent phenotypes from the 12-lead and single-lead ECG to detect structural heart disease, cardiomyopathy, and arrhythmia risk.</p>
+          </div>
+          <div class="research-item">
+            <h3>Clinical NLP &amp; EHR Science</h3>
+            <p>Large language models and structured EHR data to characterize disease burden, treatment patterns, and quality of care at population scale.</p>
+          </div>
+          <div class="research-item">
+            <h3>Wearable &amp; Remote Monitoring</h3>
+            <p>Machine learning on continuous wearable data for passive detection of cardiac events and monitoring of patients with heart failure.</p>
+          </div>
+          <div class="research-item">
+            <h3>Health Equity &amp; Global Health</h3>
+            <p>Designing and auditing AI models for fairness across populations; extending validated tools to low- and middle-income country contexts.</p>
+          </div>
+          <div class="research-item">
+            <h3>Precision Therapeutics</h3>
+            <p>Real-world evidence and computational phenomapping for personalized inference from clinical trials to diverse patient populations.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="work">
-      <p class="section-label">Selected Work</p>
-      <p class="work-note">A representative sample. Full list on <a class="pub-link" href="https://scholar.google.com/citations?user=9XhOK4AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> and <a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=khera+rohan%5Bauthor%5D" target="_blank" rel="noopener">PubMed</a>.</p>
-      <ul class="pub-list">
-        <li>
-          <a class="pub-link" href="https://doi.org/10.1001/jama.2025.8731" target="_blank" rel="noopener"><span class="pub-title">Complete AI-Enabled Echocardiography Interpretation With Multitask Deep Learning</span></a>
-          <span class="pub-meta">JAMA &nbsp;&middot;&nbsp; 2025</span>
-        </li>
-        <li>
-          <a class="pub-link" href="https://academic.oup.com/eurheartj/article/46/37/3651/8206181" target="_blank" rel="noopener"><span class="pub-title">AI-Enabled ECG and Echocardiography to Track Preclinical Progression of Transthyretin Amyloid Cardiomyopathy</span></a>
-          <span class="pub-meta">European Heart Journal &nbsp;&middot;&nbsp; 2025</span>
-        </li>
-        <li>
-          <a class="pub-link" href="https://www.nature.com/articles/s44161-025-00685-3" target="_blank" rel="noopener"><span class="pub-title">Identification of Hypertrophic Cardiomyopathy on Electrocardiographic Images With Deep Learning</span></a>
-          <span class="pub-meta">Nature Cardiovascular Research &nbsp;&middot;&nbsp; 2025</span>
-        </li>
-        <li>
-          <a class="pub-link" href="https://doi.org/10.1001/jamacardio.2025.0492" target="_blank" rel="noopener"><span class="pub-title">AI-Enabled Prediction of Heart Failure Risk From Single-Lead Electrocardiograms</span></a>
-          <span class="pub-meta">JAMA Cardiology &nbsp;&middot;&nbsp; 2025</span>
-        </li>
-        <li>
-          <a class="pub-link" href="https://doi.org/10.1016/j.jacc.2025.01.040" target="_blank" rel="noopener"><span class="pub-title">Ensemble Deep Learning for Structural Heart Disease Screening Using ECG Images: PRESENT SHD</span></a>
-          <span class="pub-meta">JACC &nbsp;&middot;&nbsp; 2025</span>
-        </li>
-        <li>
-          <a class="pub-link" href="https://doi.org/10.1056/AIoa2500588" target="_blank" rel="noopener"><span class="pub-title">TARGET-AI: A Foundational Approach for Targeted Deployment of AI-ECG in the EHR</span></a>
-          <span class="pub-meta">NEJM AI &nbsp;&middot;&nbsp; 2026</span>
-        </li>
-      </ul>
-    </section>
+      <section id="roles">
+        <h2 class="section-label">Roles &amp; Affiliations</h2>
+        <div class="section-body">
+          <ul class="row-list">
+            <li><span class="row-main">Associate Professor of Medicine (Cardiology) &amp; Biostatistics</span><span class="row-aside">Yale School of Medicine</span></li>
+            <li><span class="row-main">Director, Cardiovascular Data Science (CarDS) Lab</span><span class="row-aside">Yale University</span></li>
+            <li><span class="row-main">Clinical Director, Center for Health Informatics &amp; Analytics</span><span class="row-aside">Yale-New Haven Hospital CORE</span></li>
+            <li><span class="row-main">Associate Editor, AI &amp; Digital Health</span><span class="row-aside"><em>JAMA</em></span></li>
+            <li><span class="row-main">Attending Cardiologist</span><span class="row-aside">Yale New Haven Health</span></li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="consulting">
-      <p class="section-label">Consulting &amp; Advisory</p>
-      <p class="consult-text">I advise healthcare technology companies, medical device manufacturers, pharmaceutical firms, health systems, and investment firms on the development, validation, and responsible deployment of AI tools in cardiovascular and broader clinical settings. I bring both the scientific rigor of academic research and the clinical perspective of a practicing cardiologist.</p>
-      <div class="consult-tags">
-        <span class="tag">AI/ML in Medicine</span>
-        <span class="tag">Clinical Validation</span>
-        <span class="tag">Cardiovascular Medicine</span>
-        <span class="tag">Digital Health Strategy</span>
-        <span class="tag">Real-World Evidence</span>
-        <span class="tag">Regulatory Science</span>
-        <span class="tag">Health Equity</span>
-        <span class="tag">Medical Expert Testimony</span>
-      </div>
-    </section>
+      <section id="work">
+        <h2 class="section-label">Selected Work</h2>
+        <div class="section-body">
+          <p class="work-note">A representative sample. The full list is on <a class="text-link" href="https://scholar.google.com/citations?user=9XhOK4AAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> and <a class="text-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=khera+rohan%5Bauthor%5D" target="_blank" rel="noopener">PubMed</a>.</p>
+          <ol class="pub-list">
+            <li><div>
+              <a class="pub-title" href="https://doi.org/10.1056/AIoa2500588" target="_blank" rel="noopener">TARGET-AI: A Foundational Approach for Targeted Deployment of AI-ECG in the EHR<span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="pub-meta"><em>NEJM AI</em> &nbsp;&middot;&nbsp; 2026</span>
+            </div></li>
+            <li><div>
+              <a class="pub-title" href="https://doi.org/10.1001/jama.2025.8731" target="_blank" rel="noopener">Complete AI-Enabled Echocardiography Interpretation With Multitask Deep Learning<span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="pub-meta"><em>JAMA</em> &nbsp;&middot;&nbsp; 2025</span>
+            </div></li>
+            <li><div>
+              <a class="pub-title" href="https://academic.oup.com/eurheartj/article/46/37/3651/8206181" target="_blank" rel="noopener">AI-Enabled ECG and Echocardiography to Track Preclinical Progression of Transthyretin Amyloid Cardiomyopathy<span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="pub-meta"><em>European Heart Journal</em> &nbsp;&middot;&nbsp; 2025</span>
+            </div></li>
+            <li><div>
+              <a class="pub-title" href="https://www.nature.com/articles/s44161-025-00685-3" target="_blank" rel="noopener">Identification of Hypertrophic Cardiomyopathy on Electrocardiographic Images With Deep Learning<span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="pub-meta"><em>Nature Cardiovascular Research</em> &nbsp;&middot;&nbsp; 2025</span>
+            </div></li>
+            <li><div>
+              <a class="pub-title" href="https://doi.org/10.1001/jamacardio.2025.0492" target="_blank" rel="noopener">AI-Enabled Prediction of Heart Failure Risk From Single-Lead Electrocardiograms<span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="pub-meta"><em>JAMA Cardiology</em> &nbsp;&middot;&nbsp; 2025</span>
+            </div></li>
+            <li><div>
+              <a class="pub-title" href="https://doi.org/10.1016/j.jacc.2025.01.040" target="_blank" rel="noopener">Ensemble Deep Learning for Structural Heart Disease Screening Using ECG Images: PRESENT SHD<span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="pub-meta"><em>Journal of the American College of Cardiology</em> &nbsp;&middot;&nbsp; 2025</span>
+            </div></li>
+          </ol>
+        </div>
+      </section>
 
-    <section id="contact">
-      <p class="section-label">Contact</p>
-      <div class="contact-grid">
-        <div class="contact-row">
-          <span class="contact-label">Email</span>
-          <span class="contact-value"><a href="mailto:rohan.khera@yale.edu">rohan.khera@yale.edu</a></span>
+      <section id="consulting">
+        <h2 class="section-label">Consulting &amp; Advisory</h2>
+        <div class="section-body prose">
+          <p>I advise pharmaceutical and device companies, health-technology developers, health systems, and investors on AI in cardiovascular care. Typical engagements include AI-enabled identification of underdiagnosed cardiomyopathies and valvular disease, such as transthyretin amyloid cardiomyopathy, hypertrophic cardiomyopathy, aortic stenosis, and left ventricular systolic dysfunction; design of validation and deployment studies, including prospective and multisite evaluation; evidence and regulatory strategy for AI-based software as a medical device; and scientific and technical diligence for investment decisions.</p>
+          <div class="consult-tags" aria-label="Areas of expertise">
+            <span class="tag">AI/ML in Medicine</span>
+            <span class="tag">Clinical Validation</span>
+            <span class="tag">Cardiovascular Medicine</span>
+            <span class="tag">Digital Health Strategy</span>
+            <span class="tag">Real-World Evidence</span>
+            <span class="tag">Regulatory Science</span>
+            <span class="tag">Health Equity</span>
+            <span class="tag">Medical Expert Testimony</span>
+          </div>
+          <p class="consult-cta">For advisory inquiries, please reach out by <a class="text-link" href="mailto:rohan.khera@yale.edu?subject=Advisory%20inquiry">email</a>.</p>
         </div>
-        <div class="contact-row">
-          <span class="contact-label">Lab</span>
-          <span class="contact-value"><a href="https://www.cards-lab.org/" target="_blank" rel="noopener">cards-lab.org</a></span>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-label">Contact</h2>
+        <div class="section-body contact-grid">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a href="mailto:rohan.khera@yale.edu">rohan.khera@yale.edu</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Lab</span>
+            <span class="contact-value"><a href="https://www.cards-lab.org/" target="_blank" rel="noopener">cards-lab.org</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Yale Profile</span>
+            <span class="contact-value"><a href="https://medicine.yale.edu/profile/rohan-khera/" target="_blank" rel="noopener">medicine.yale.edu</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Google Scholar</span>
+            <span class="contact-value"><a href="https://scholar.google.com/citations?user=9XhOK4AAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar profile</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">X</span>
+            <span class="contact-value"><a href="https://x.com/rohan_khera" target="_blank" rel="noopener">@rohan_khera</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value"><a href="https://www.linkedin.com/in/r-khera/" target="_blank" rel="noopener">r-khera</a></span>
+          </div>
         </div>
-        <div class="contact-row">
-          <span class="contact-label">Yale Profile</span>
-          <span class="contact-value"><a href="https://medicine.yale.edu/profile/rohan-khera/" target="_blank" rel="noopener">medicine.yale.edu</a></span>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">Google Scholar</span>
-          <span class="contact-value"><a href="https://scholar.google.com/citations?user=9XhOK4AAAAAJ&hl=en" target="_blank" rel="noopener">Scholar Profile</a></span>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">Twitter / X</span>
-          <span class="contact-value"><a href="https://x.com/rohan_khera" target="_blank" rel="noopener">@rohan_khera</a></span>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-value"><a href="https://www.linkedin.com/in/r-khera/" target="_blank" rel="noopener">r-khera</a></span>
-        </div>
-      </div>
-    </section>
+      </section>
+
+    </main>
 
     <footer>
-      <p>Rohan Khera, MD MS &nbsp;&middot;&nbsp; Yale University &nbsp;&middot;&nbsp; New Haven, CT &nbsp;&middot;&nbsp; Updated 2026</p>
+      <p>Rohan Khera, MD, MS &nbsp;&middot;&nbsp; New Haven, Connecticut &nbsp;&middot;&nbsp; Updated November 2026</p>
     </footer>
 
   </div>
