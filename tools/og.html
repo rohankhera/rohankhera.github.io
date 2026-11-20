@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Source for og-image.jpg (the card shown when the site is shared).
+     Regenerate with: python3 tools/make_og.py -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="../assets/site.css" />
+  <style>
+    html, body { width: 1200px; height: 630px; overflow: hidden; background: #fff; }
+    .card { position: relative; width: 1200px; height: 630px; }
+    .text { position: absolute; left: 72px; top: 96px; }
+    h1 { font-size: 104px; }
+    .lede { font-size: 36px; max-width: none; margin-top: 30px; padding: 0; }
+    .portrait { position: absolute; right: 72px; top: 96px; width: 300px; margin: 0; left: auto; z-index: 2; }
+    .ecg { position: absolute; left: 0; right: 0; bottom: 56px; }
+    .ecg .wrap { width: 1056px; margin-left: 72px; }
+    .ecg__ink { animation: none; }
+    .url { position: absolute; left: 72px; bottom: 16px; font-family: var(--sans); font-size: 19px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="text">
+      <h1>Rohan Khera,<span class="degrees"> MD, MS</span></h1>
+      <p class="lede">Cardiologist and data scientist<br />at Yale University</p>
+    </div>
+    <img class="portrait" src="../headshot.jpg" alt="" />
+    <div class="ecg">
+      <div class="wrap ecg__paper">
+        <span class="ecg__note ecg__note--lead">II</span>
+        <span class="ecg__note ecg__note--scale">25 mm/s   10 mm/mV</span>
+      </div>
+      <div class="ecg__ink">
+        <div class="wrap ecg__run">
+          <svg class="ecg__cal" width="60" height="120" viewBox="0 0 60 120"><path d="M0 80H20V40H40V80H60" /></svg>
+          <span class="ecg__trace"></span>
+        </div>
+      </div>
+    </div>
+    <div class="url">rohankhera.com</div>
+  </div>
+</body>
+</html>
